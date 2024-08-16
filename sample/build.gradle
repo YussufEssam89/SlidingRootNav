@@ -1,11 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdk rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
+
+    namespace "com.yarolegovich.slidingrootnav.sample"
+
     defaultConfig {
         applicationId "com.yarolegovich.slidingrootnav.sample"
-        minSdkVersion 21
+        minSdk rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
